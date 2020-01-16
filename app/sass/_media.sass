@@ -1,0 +1,930 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1580px)
+  .children
+    align-items: stretch
+    .image
+      max-width: 520px
+      //height: 100%
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+  .children-text
+    margin: 20px 20px 20px 0
+    max-width: 520px
+
+@media only screen and (max-width: 1200px)
+  .container
+    padding: 0 31px
+
+  header .container
+    padding: 9px 31px
+    align-items: center
+
+  main .container
+    padding: 142px 31px 0
+
+  h1
+    font-size: 36px
+    span
+      font-size: 64px
+      display: block
+
+  .main-top
+    .color-accent
+      font-size: 51px
+      span
+        font-size: 61px
+        display: block
+
+  main .image
+    right: auto
+    left: -80px
+    width: 106px
+    bottom: -22px
+
+  .main-top
+    flex-direction: column
+    align-items: center
+
+  .main-box
+    max-width: 514px
+    h3
+      text-align: center
+    .description
+      text-align: center
+    &:last-child
+      position: relative
+      max-width: 300px
+      margin: 21px 0 0 0
+
+  .sale-wrapper
+    position: relative
+    z-index: 2
+    padding: 23px 18px
+
+  .list-social
+    margin: 0 40px 0 auto
+
+  .advantages-program__line h3
+    font-size: 22px
+
+  .click-top
+    right: 20px
+
+  .gala-concert
+    position: relative
+    z-index: 3
+    .container
+      padding: 67px 70px 31px
+      flex-direction: column
+      align-items: center
+      .image
+        position: relative
+        bottom: 0
+        right: 0
+        max-width: 315px
+        margin: -50px auto 0
+    h2
+      font-size: 47px
+      text-align: center
+      span
+        font-size: 73px
+        display: block
+    .text
+      font-size: 17.5px
+      max-width: 630px
+      text-align: center
+      p
+        max-width: 585px
+        margin: 0 auto
+
+  .way .container
+    padding: 182px 30px 100px
+    margin: -120px 0 0 0
+
+  .way-box
+    font-size: 18px
+    max-width: 232px
+
+  .way-box:nth-child(2), .way-box:nth-child(3)
+    margin: 0
+
+  .counselors
+    margin: -250px 0 0 0
+    .container
+      padding: 256px 30px 110px
+
+
+  .services
+    margin: -160px 0 0 0
+    .container
+      padding: 171px 30px 0
+
+
+  .services-box .image
+    width: 185px
+    height: 176px
+
+  .stars-wrapper
+    max-width: 489px
+
+  .star-dance
+    margin: -110px 0 0 0
+    .container
+      padding: 84px 30px 99px
+
+  .stars-dance__wrapper
+    flex-direction: column-reverse
+    margin: 0 0 69px
+    .text
+      margin: 22px 0 0 0
+    .image
+      max-width: 544px
+      height: 373px
+      margin: 0
+      &:before
+        width: 100%
+
+  .result
+    padding: 129px 31px 67px
+    margin: -100px 0 0 0
+
+  .children
+    flex-direction: column-reverse
+    align-items: center
+    padding: 66px 30px 59px
+
+  .children-text
+    max-width: none
+    justify-content: center
+    margin: 30px auto 0
+    h2
+      text-align: center
+      padding: 63px 0 0 0
+      max-width: none
+      &:before
+        left: 50%
+        top: 0
+        transform: translate(-50%,0)
+    .description-section
+      margin: 0 auto 29px
+      text-align: center
+    .btn
+      margin: 0 auto
+
+  .benefit-text
+    max-width: 541px
+
+  .benefit
+    padding: 47px 0 18px
+    .image
+      margin: 0 -150px 0 0
+
+  .package-cost .container
+    padding: 104px 30px 44px
+
+  .package-cost__content
+    justify-content: space-around
+
+  .certificate
+    padding: 55px 0 47px
+
+  .certificate-slider
+    padding: 0
+
+  .footer-top .container
+    padding: 13px 30px 11px
+
+  .click-top
+    position: relative
+    transform: none
+    right: 0
+    top: 0
+    margin: 0 0 0 19px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1100px)
+  .certificate-slider
+    &:before
+      display: none
+
+  .footer-top .logo
+    width: 83px
+
+@media only screen and (max-width: 992px)
+  h2
+    font-size: 26px
+    padding: 53px 0 0 0
+
+  .description-section
+    font-size: 18px
+
+  .about-box__content
+    justify-content: space-around
+
+  .about-box__item
+    margin: 0 0 33px
+
+  .phone
+    margin: 0 29px 0 0
+
+  .logo
+    max-width: 150px
+
+  .list-social
+    margin: 0 20px 0 auto
+    li
+      margin: 0 10px 0 0
+
+  .counselors .text
+    font-size: 16px
+
+  .counselors .description-section
+    font-size: 20px
+
+  .services-box:nth-child(even)
+    margin: 0
+
+  .services-box:nth-child(2)
+    margin: 65px 0 0 0
+
+  .list-number
+    flex-direction: column
+    align-items: flex-start
+    padding: 0 70px
+    margin: 0 0 60px
+    li
+      max-width: none
+      p
+        font-size: 22px
+
+  .list-number li:first-child, .list-number li:nth-child(4), .list-number li:nth-child(2), .list-number li:last-child
+    order: inherit
+
+  .benefit
+    .image
+      margin: 0 -280px 0 0
+      max-width: 423px
+
+  .reservation
+    flex-direction: column-reverse
+    align-items: center
+
+  .reservation-image
+    width: 100%
+    justify-content: center
+    align-items: center
+    padding: 197px 0 42px
+
+  .reservation-text
+    margin: 0
+    padding: 35px 0 44px
+
+  .putMessage
+    margin: 0
+
+  .sale-item
+    margin: 0 auto 26px
+
+  .reservation-image .image
+    left: 50%
+    top: -70px
+    transform: translate(-50%,0)
+
+  .sale-icon
+    display: none
+
+  .question
+    padding: 53px 0 45px
+
+  .answer
+    font-size: 14px
+    ul li
+      flex-direction: column
+      align-items: flex-start
+      p
+        min-width: auto
+        display: block
+
+  .question-box__wrapper h3
+    font-size: 18px
+
+  .answer .button-group
+    margin: 31px 0 29px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 910px)
+  .footer-top
+    .list-social
+      display: none
+    .phone
+      margin: 0 0 0 auto
+
+  .footer-bottom
+    .container
+      padding: 18px
+      font-size: 11px
+
+  .footer-menu
+    margin: 0 0 0 23px
+    li
+      margin: 0 25px 0 0
+
+@media only screen and (max-width: 810px)
+  .logo
+    max-width: 83px
+
+  .way-content
+    padding: 0 70px
+    justify-content: space-between
+
+  .way-box, .way-box:nth-child(2), .way-box:nth-child(3)
+    margin: 0 0 20px
+
+  .way-box .icon
+    width: 97px
+    height: 98px
+    margin: 0 auto -10px
+
+  .photo-box
+    max-width: 252px
+    font-size: 18px
+    margin: 0 0 30px
+    .image
+      width: 143px
+      height: 143px
+
+  .stars-dance__photo
+    padding: 0 60px
+    .item
+      margin: 0 0 39px
+
+  .certificate-box
+    width: 210px
+
+@media only screen and (max-width: 768px)
+  .btn-burger
+    display: flex
+
+  .list-social
+    display: none
+
+  .phone
+    margin: 0 29px 0 auto
+
+  .advantages-program
+    padding: 0 0 68px
+
+  .footer-bottom .container
+    padding: 19px 34px 20px
+    font-size: 10px
+
+  .footer-menu li a
+    font-size: 11px
+    max-width: 118px
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 760px)
+  .gala-concert .container
+    padding: 40px 20px
+
+  .benefit
+    .image
+      display: none
+
+  .footer-top .container
+    padding: 25px 20px 14px
+
+
+
+@media only screen and (max-width: 710px)
+  header .container
+    padding: 7px 20px
+
+  .footer-top .logo
+    max-width: 77px
+
+  .click-top
+    width: 30px
+    height: 30px
+
+  .phone
+    font-size: 18px
+
+  .btn-burger
+    width: 23px
+    height: 16px
+    margin: 0 0 0 18px
+    span
+      height: 2px
+
+  .container
+    padding: 0 20px
+
+  main .container
+    padding: 102px 20px 0
+
+  .way-content
+    padding: 0
+
+  .way .container
+    padding: 28px 20px 67px
+    margin: 0
+
+  .way-box
+    font-size: 13px
+
+  .list-number
+    padding: 0 25px
+
+  .gala-concert h2
+    font-size: 24px
+    line-height: normal
+    margin: 0 auto 8px
+    span
+      font-size: 37px
+
+  .services
+    margin: -80px 0 0 0
+    .container
+      padding: 85px 20px 0
+
+  .services-box
+    max-width: 113px
+    font-size: 13px
+    .image
+      width: 94px
+      height: 90px
+
+  .stars-wrapper
+    max-width: 249px
+    padding: 91px 0 33px
+    font-size: 16px
+
+  .star-dance
+    margin: -78px 0 0 0
+    .container
+      padding: 83px 20px 76px
+
+  .stars-dance__photo
+    padding: 0
+
+  .certificate-box
+    max-width: 103px
+
+  .footer-menu li
+    margin: 0 18px 0 0
+
+@media only screen and (max-width: 675px)
+  .footer-top .phone
+    width: 100%
+    justify-content: center
+    text-align: center
+    order: -1
+    margin: 0 auto 21px
+
+  .footer-menu
+    margin: 0 auto 0 21px
+
+@media only screen and (max-width: 600px)
+  header
+    .btn
+      display: none
+
+  .phone
+    margin: 0 0 0 auto
+
+  .logo
+    max-width: 77px
+
+  .main-box h3
+    font-size: 26px
+
+  .main-box .description
+    font-size: 13px
+    line-height: 1.54
+
+  .sale-wrapper:before
+    display: none
+
+  .sale-wrapper
+    padding: 21px 48px 20px
+    flex-wrap: wrap
+    justify-content: center
+    .text
+      margin: 0
+
+  .main-box:last-child
+    margin: 27px 0 0 0
+    max-width: 258px
+    .image
+      width: 93px
+      left: -72px
+      bottom: -26px
+
+  h1
+    letter-spacing: 0.83px
+    font-size: 31px
+    span
+      font-size: 55px
+
+  .main-top .color-accent
+    font-size: 44px
+    letter-spacing: 0.66px
+    span
+      font-size: 53px
+
+  .mobile-menu
+    width: 290px
+
+  .menu li a
+    font-size: 16px
+
+  .menu
+    margin: 40px 0 0 0
+
+  .mobile-menu__top
+    padding: 20px 0 40px
+
+  .mobile-menu__bottom
+    padding: 30px
+
+  .btn-close
+    width: 20px
+    height: 20px
+
+  .main-top
+    margin: 0 0 60px
+
+  h2:before
+    width: 35px
+    height: 21px
+
+  h2
+    padding: 31px 0 0 0
+    font-size: 22px
+    margin: 0 auto 16px
+
+  .description-section
+    font-size: 14px
+    margin: 0 auto 31px
+
+  .about-box__item
+    max-width: 285px
+    margin: 0 0 22px
+    .icon
+      max-width: 114px
+    p
+      font-size: 14px
+
+  .about-box__content
+    margin: 0 0 27px
+
+  .advantages-program__line
+    font-size: 14px
+    padding: 30px 38px 12px 22px
+    .icon
+      display: none
+    h3
+      font-size: 20px
+
+  .advantages-program .btn
+    font-size: 16px
+    padding: 19px 30px
+
+  .way-box
+    max-width: 190px
+
+  .counselors
+    margin: -260px 0 0 0
+    .container
+      padding: 270px 20px 67px
+
+  .counselors .description-section
+    font-size: 16px
+
+  .counselors .text
+    font-size: 14px
+
+  .list-number
+    padding: 0
+    margin: 0 0 45px
+    li
+      margin: 0 0 9px
+      .number
+        width: 23px
+        height: 23px
+        min-width: 23px
+        margin: 0 15px 0 0
+        font-size: 14px
+      p
+        font-size: 14px
+
+  .photo-box
+    max-width: 200px
+    font-size: 13px
+    .image
+      width: 109px
+      height: 109px
+
+  .stars-dance__wrapper .image
+    max-width: 304px
+    height: 209px
+
+  .stars-dance__wrapper .text
+    margin: 32px 0 0 0
+    font-size: 16px
+    ul, p
+      font-size: 16px
+
+  .list-check
+    li
+      font-size: 16px
+
+  .stars-dance__wrapper
+    margin: 0 0 51px
+
+  .stars-dance__wrapper .image:before
+    left: -10px
+    top: -20px
+
+  .stars-dance__photo .item
+    max-width: 241px
+    align-items: center
+    justify-content: center
+    .image
+      width: 177px
+      height: 124px
+      margin: 0 auto 18px
+    h3
+      text-align: center
+      font-size: 22px
+      margin: 0 0 15px
+    p
+      text-align: center
+      font-size: 16px
+
+  .stars-dance__photo
+    justify-content: space-around
+
+  .star-dance
+    margin: -66px 0 0 0
+
+  .result
+    padding: 108px 0 47px
+    margin: -100px 0 0 0
+    .container
+      padding: 0 20px
+    h2
+      margin: 0 auto 32px
+
+  .timeline
+    &:before
+      left: 16px
+      height: calc(100% - 30px)
+      top: 50%
+      transform: translate(0,-50%)
+    li
+      font-size: 14px
+      .number
+        min-width: 32px
+        width: 32px
+        height: 32px
+        font-size: 14px
+        margin: 0 13px 0 0
+
+  .children-text h2
+    padding: 31px 0 0 0
+
+  .benefit
+    padding: 0
+    .container
+      padding: 32px 20px 20px
+    h2
+      padding: 0
+      &:before
+        display: none
+
+  .package-cost .container
+    padding: 56px 20px 72px
+
+  .list
+    font-size: 14px
+
+  .package-cost__box h3
+    font-size: 20px
+    margin: 0 auto 22px
+
+  .package-cost__box
+    margin: 0 0 32px
+    padding: 0 33px 34px
+    .icon
+      width: 59px
+      margin: -22px auto 10px
+
+  .reservation-image .image
+    max-width: 306px
+
+  .reservation-image
+    padding: 108px 0 29px
+
+  .sale-item
+    font-size: 22px
+    margin: 0 auto 23px
+
+  .position
+    width: 44px
+    height: 58px
+
+  .digit
+    font-size: 35px
+
+  .countDiv
+    margin: 0 13px
+    width: 4px
+    &:before, &:after
+      width: 4px
+      height: 4px
+
+  .clock2, .clock3, .clock4
+    font-size: 10px
+    width: 90px
+
+  .description-timer
+    margin: 8px 0 0 0
+
+  .reservation-text
+    padding: 31px 20px 41px
+    max-width: none
+    h2
+      margin: 0 auto
+      font-size: 22px
+      text-align: center
+      span
+        font-size: 42px
+
+  .question
+    padding: 41px 0 34px
+    .container
+      padding: 0
+
+  .question-box
+    padding: 17px 20px
+    h3
+      font-size: 16px
+
+  .answer
+    font-size: 14px
+
+  .question-box__wrapper h3
+    padding: 0 20px 0 0
+
+  .certificate
+    padding: 31px 0 41px
+
+@media only screen and (max-width: 525px)
+  .star-dance
+    margin: -80px 0 0 0
+
+  .stars-wrapper
+    padding: 91px 0 42px
+
+  .children
+    padding: 0
+
+  .children-text
+    margin: 0
+    padding: 25px 20px 43px
+    h2
+      max-width: 267px
+      margin: 0 auto 24px
+    .description-section
+      font-size: 14px
+
+  .target, .benefit-text p
+    font-size: 14px
+
+  .target
+    padding: 0 0 0 20px
+    &:before
+      width: 8px
+      height: 103px
+
+  .question-box .number
+    display: none
+
+  .question-box__wrapper
+    padding: 0
+    width: 100%
+
+@media only screen and (max-width: 440px)
+  .advantages-program .btn
+    padding: 19px 0
+    width: 100%
+
+  .gala-concert .text
+    font-size: 9px
+
+  .way-box
+    max-width: 160px
+
+  .way .description-section
+    margin: 0 auto
+
+  .services-box
+    max-width: none
+    width: auto
+
+  .services h2
+    max-width: 213px
+
+  .photo-box
+    max-width: 135px
+    margin: 0 0 26px
+
+  .star-dance .btn-accent
+   display: none
+
+  .children-text .btn
+    padding: 16px 0
+    width: 100%
+    font-size: 20px
+
+  .answer .button-group
+    margin: 20px 0
+    flex-direction: column
+    align-items: flex-start
+    .btn
+      margin: 0 0 10px
+      width: 100%
+      font-size: 14px
+
+  .slick-arrow
+    width: 45px
+    height: 45px
+    background-size: 9px
+
+  .certificate-slider__nav
+    margin: 31px 0 0 0
+
+  .certificate h2
+    margin: 0 auto 31px
+
+  .click-top
+    display: none
+
+  .footer-menu
+    margin: 0
+    li
+      margin: 0 25px 0 0
+      a
+        max-width: 102px
+
+@media only screen and (max-width: 360px)
+  .phone
+    font-size: 16px
+
+  .logo
+    max-width: 70px
+
+  .way-box
+    max-width: 140px
+    font-size: 12px
+
+  .services-box
+    font-size: 12px
+
+  .services-box .image
+    width: 88px
+    height: 84px
+
+  .main-box:last-child
+    margin: 27px 0 0 auto
+
+  .countDiv
+    margin: 0 10px
+
+  .position
+    width: 40px
+    height: 53px
+
+  .certificate-box
+    max-width: 80px
+
+  .footer-menu
+    flex-direction: column
+    align-items: flex-start
+    li
+      margin: 0 0 5px
+      a
+        max-width: none
+        width: 100%
