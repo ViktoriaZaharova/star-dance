@@ -15,6 +15,7 @@ $(document).ready(function () {
 
     $('.question-box h3').click(function () {
         $(this).toggleClass('close').siblings('.answer').fadeToggle();
+
     });
 
     $("body").on("click", ".click-top", function () {
@@ -24,11 +25,21 @@ $(document).ready(function () {
     });
 
     $('.btn-burger').click(function () {
-$('.mobile-menu').fadeIn();
+        $('.mobile-menu').fadeIn();
     });
 
     $('.btn-close').click(function () {
         $('.mobile-menu').fadeOut();
+    });
+
+    $('.go_to').click(function () {
+        var scroll_el = $(this).attr('href');
+        if ($(scroll_el).length != 0) {
+            $('html, body').animate({
+                scrollTop: $(scroll_el).offset().top
+            }, 500);
+        }
+        return false;
     });
 
     function blocktimer(idtimer, timetimes, timesnows, member) {
